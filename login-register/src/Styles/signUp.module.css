@@ -1,0 +1,95 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+#MainContainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+#MainContainer>form{
+    height: 50vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* border: 1px solid black; */
+
+}
+#MainContainer>form>h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+#MainContainer>form>input{
+    border: 2px solid gray;
+    font-family: serif;
+}
+#MainContainer>form>label,input{
+    width: 40%;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.3rem;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#MainContainer>form>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#MainContainer>form>div>button{
+    height: 30px;
+    width: 60%;
+    background-color: #007BFF; /* Bootstrap primary blue */
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    
+    cursor: pointer;
+}
+
+@media (max-width: 981px) {
+
+    #MainContainer>form{
+        align-items: flex-start;
+        width: 60%;
+        padding: 10px;
+        /* border: 1px solid rgb(242, 8, 8); */
+    }
+
+    #MainContainer>form>input{
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    #MainContainer>form{
+        align-items: flex-start;
+        width: 90%;
+        padding: 10px;
+        /* border: 1px solid rgb(242, 8, 8); */
+    }
+
+    #MainContainer>form>input{
+        width: 80%;
+    }
+}
